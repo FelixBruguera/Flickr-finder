@@ -1,0 +1,12 @@
+<head>
+    <%= stylesheet_link_tag 'index' %>
+</head>
+<%= render partial:'header' %>
+<div id='username'>
+    <p>Results for: <%= @info.username %></p>
+</div>
+<div id="index-pics">
+    <% @pics.each do |pic| %>
+        <%= image_tag(pic) %>
+    <% end %>
+</div>

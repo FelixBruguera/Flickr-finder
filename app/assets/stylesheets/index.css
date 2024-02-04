@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+#index-pics {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+}
+img {
+    transition: transform 0.1s;
+    border: 2px solid black;
+}
+img:hover {
+    transform: scale(1.1);
+    border: 2px solid azure;
+}
+#header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+#search-field {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    background-color: black;
+    color: azure;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+#search-field > form > input {
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid azure;
+    background-color: lightgrey;
+}
+#button:hover {
+    background-color: azure;
+}
+#username {
+    color: azure;
+    font-weight: 800;
+    text-align: center;
+    font-size: 25px;
+}
+#header > a {
+    color: azure;
+    text-decoration: none;
+}
+#header > a > p {
+    font-size: 30px;
+    color: azure;
+    font-weight: 800;
+}

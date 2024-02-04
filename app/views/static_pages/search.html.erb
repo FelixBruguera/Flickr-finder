@@ -1,0 +1,11 @@
+<head>
+    <%= stylesheet_link_tag 'index' %>
+</head>
+<%= render partial:'header' %>
+<div id="search-field">
+    <p>Enter a search query or a Flickr ID</p>
+    <%= form_with url: '/search', method: :get do |f| %>
+        <%= f.text_field :id %>
+        <%= f.submit 'Search', id:'button'%>
+    <% end %>
+</div>
